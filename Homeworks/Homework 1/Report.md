@@ -6,7 +6,9 @@
 
 Given pairs $(a, b)$ where $a = 0.1 \cdot b$, compute the quantity
 
-$$a - \sum_{i=1}^{b} 0.1$$
+$$
+a - \sum_{i=1}^{b} 0.1
+$$
 
 which is mathematically equal to zero. The goal is to measure the absolute error introduced by floating-point arithmetic across different summation strategies and increasing problem sizes.
 
@@ -101,11 +103,15 @@ Note that $B = 2I$ (a scalar multiple of the identity), so $B(\mathbf{x} - \math
 
 The logistic map is the recurrence relation:
 
-$$x_{n+1} = \rho \, x_n (1 - x_n)$$
+$$
+x_{n+1} = \rho \, x_n (1 - x_n)
+$$
 
 Starting from $x_0 = 0.5$, compute 50 iterates ($x_0$ through $x_{49}$) for each of the following values of the parameter $\rho$:
 
-$$\rho \in \{0.8,\ 1.5,\ 2.8,\ 3.2,\ 3.5,\ 3.65\}$$
+$$
+\rho \in \{0.8,\ 1.5,\ 2.8,\ 3.2,\ 3.5,\ 3.65\}
+$$
 
 ### Results
 
