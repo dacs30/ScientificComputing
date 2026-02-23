@@ -68,12 +68,12 @@ D = np.array([[1,  2],
               [2,  3],
               [-1, 0]])      # 3×2
 
-# All vectors are 1D arrays in numpy
-x = np.array([1, 0])        # 2×1
+# All vectors are column vectors
+x = np.array([[1], [0]])        # 2×1
 
-y = np.array([0, 1])        # 2×1
+y = np.array([[0], [1]])        # 2×1
 
-z = np.array([1, 2, -1])    # 3×1
+z = np.array([[1], [2], [-1]])  # 3×1
 
 # stack them into a 2D array
 matricesAB = np.array([A, B])
