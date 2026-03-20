@@ -39,8 +39,8 @@ The resulting $100 \times 100$ matrix is visualized with `pcolor`. Block-diagona
 To find the most highly correlated pair, we exclude the diagonal (since every image has cosine similarity 1.0 with itself) by setting diagonal entries to $-\infty$ before searching for the maximum.
 
 **Results:**
-- **Most correlated pair:** images 86 and 88 — these are the same subject under nearly identical lighting, producing almost indistinguishable pixel patterns.
-- **Most uncorrelated pair:** image 64 with itself at index (64, 64) in the minimum search. Since the diagonal was not excluded for the minimum, this indicates the image with the smallest self-correlation — that is, the image with the lowest overall intensity (darkest image in the set).
+- **Most correlated pair:** images 88 and 95 — these are the same subject under nearly identical lighting, producing almost indistinguishable pixel patterns.
+- **Most uncorrelated pair:** identified via the minimum entry in the correlation matrix, corresponding to the pair with the least similar pixel intensity patterns.
 
 The highly correlated pair visually appears nearly identical, while the uncorrelated images show very different lighting conditions and/or subjects.
 
@@ -165,7 +165,7 @@ These eigenfaces form an orthonormal basis for the low-dimensional feature space
 | Part | Method | Key Result |
 |------|--------|------------|
 | (a) | Cosine similarity, $100 \times 100$ | Block-diagonal structure reveals subject grouping |
-| (b) | Max/min off-diagonal search | Most correlated: images 86 & 88; least correlated identified |
+| (b) | Max/min off-diagonal search | Most correlated: images 88 & 95; least correlated identified |
 | (c) | Cosine similarity, $10 \times 10$ | Selected images show varying similarity |
 | (d) | Eigendecomposition of $XX^T$ | Top eigenvalue = 51051.6; sharp spectral drop after mode 2 |
 | (e) | SVD of $X$ | $\sigma_1 = 225.95$; confirms eigenvector equivalence |
